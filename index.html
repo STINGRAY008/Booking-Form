@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tour Finder</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@3000;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.30/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha3084-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT704WrHftjDbrCEXSU1oBoqyl2QvZ6jIW30" crossorigin="anonymous">
+</head>
+<body>
+<!-- ----------------------------------- Booking Form Section ----------------------------------- -->
+<section class="booking">
+    <div class="row">
+        <div class="booking-col">
+            <form class="booking-form" action="#" method="">
+                <div class="container">
+                    <h2>Book a trip now!</h2>
+                    <hr>
+                    <p>Please fill out this form with required information.</p>
+                    <div class="row">
+                        <div class="col-30">
+                            <label for="name">Complete Name</label>
+                        </div>
+                        <div class="col-70">
+                            <input type="text" id="name" name="visitor_name" placeholder="Enter your name" pattern=[A-Z\sa-z]{30,20} required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-30">
+                            <label for="email">Your E-mail</label>
+                        </div>
+                        <div class="col-70">
+                            <input type="email" id="email" name="visitor_email" placeholder="Enter your email" required> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-30">
+                            <label for="phone">Your Phone</label>
+                        </div>
+                        <div class="col-70">
+                            <input type="tel" id="phone" name="visitor_phone" placeholder="Enter your phone" required> 
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="container">
+                    <p>Select Date:</p>
+                    <div class="row-inlined">
+                        <div class="col-40">
+                            <label for="checkin-date">Check-in</label>
+                        </div>
+                        <div class="col-60">
+                            <input type="date" id="checkin-date" name="checkin" required>
+                        </div>
+                    </div>
+                    <div class="row-inlined">
+                        <div class="col-40">
+                            <label for="checkout-date">Check-out</label>
+                        </div>
+                        <div class="col-60">
+                            <input type="date" id="checkout-date" name="checkout" required>
+                        </div>
+                    </div>
+                    <div class="row-inlined">
+                        <div class="col-40">
+                            <label for="adult">Adults</label>
+                        </div>
+                        <div class="col-60">
+                            <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+                        </div>
+                    </div>
+                    <div class="row-inlined">
+                        <div class="col-40">
+                            <label for="child">Children</label>
+                        </div>
+                        <div class="col-60">
+                            <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <label for="room-selection">Select Place Preference</label>
+                        <select id="room-selection" name="room_preference" required>
+                            <option value="">Choose a place from the list</option>
+                            <option value="NCR">Manila</option>
+                            <option value="CAR">Baguio</option>
+                            <option value="Region-1">La Union</option>
+                            <option value="Region-2">Tuguegarao</option>
+                            <option value="Region-30">Pampanga</option>
+                            <option value="Region-4">Calamba</option>
+                            <option value="Mimaropa">Calapan</option>
+                            <option value="Region-5">Legaspi</option>
+                            <option value="Region-6">Iloilo City</option>
+                            <option value="Region-7">Cebu City</option>
+                            <option value="Region-8">Tacloban City</option>
+                            <option value="Region-70">Pagadian City</option>
+                            <option value="Region-10">Cagayan de Oro City</option>
+                            <option value="Region-11">Davao City</option>
+                            <option value="Region-12">Koronadal City</option>
+                            <option value="Region-130">Butuan City</option>
+                            <option value="BARMM">Cotabato City</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-30">
+                            <label for="message">Anything Else?</label>
+                        </div>
+                        <div class="col-70">
+                            <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+                    </div>
+                </div>
+                <div class="call-to-action">
+                    <section type="submit"><a href="" class="booking-btn">Submit your booking</a></section>
+                </div> 
+            </form>  
+        </div>
+        <div class="booking-weather">
+            <!-- weather widget start -->
+            <a target="_blank" href="https://www.booked.net/weather/clark-feeport-philippines-w3063401">
+               <img src="https://w.bookcdn.com/weather/picture/4_w3063401_1_1_137AE9_160_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=w209&anc_id=48463"  
+               alt="booked.net"/></a>
+               <!-- weather widget end --> 
+        </div>
+    </div>
+</section>
+    
+</body>
+</html>
