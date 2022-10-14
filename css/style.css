@@ -42,17 +42,16 @@ body {
 }
 .booking-weather img{
     width: 400px;
-    padding: 0px 50px;
+    padding: 0px 30px;
 }
 .container{
-    border-radius: 5px;
     padding: 15px;
 }
 .row{
     margin: 15px 0;
 }
 .row-inlined{
-    width: 49%;
+    width: 48%;
     display: inline-block;
     float: left; 
     margin-left: 1%;
