@@ -22,6 +22,9 @@ body {
 .booking p{
     padding-top: 20px;
 }
+hr{
+    margin-top: 10px;
+}
 .booking{
     width: 95%;
     margin: auto;
@@ -44,13 +47,14 @@ body {
     width: 400px;
     padding: 0px 30px;
 }
-.container{
+.booking-container{
     padding: 15px;
+
 }
-.row{
-    margin: 15px 0;
+.booking-row{
+    margin: 10px 0;
 }
-.row-inlined{
+.booking-row-inlined{
     width: 48%;
     display: inline-block;
     float: left; 
@@ -72,15 +76,17 @@ body {
 .col-40{
     float: left;
     width: 40%;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }/* Floating column for labels: 60% width */
 .col-60{
     float: left;
     width: 60%;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 /* Clear floats after the columns */
-.row:after {
+.booking-row:after {
     content: "";
     display: table;
     clear: both;
@@ -96,7 +102,7 @@ input, select, textarea{
 }
 /* Style the label to display next to the inputs */
 label {
-    padding: 12px 12px 12px 0;
+    padding: 12px 12px 12px 0px;
     display: inline-block;
 }
   /* Style the submit button */
@@ -125,11 +131,11 @@ label {
     transition: 1s;
 }
 @media only screen and (max-width: 600px){
-    .col-30, .col-70, .col-10, .col-60, input, .place{
+    .col-30, .col-70, .col-40, .col-60, input, .place{
         width: 90%;
         margin-top: 0;
     } 
-    .row, .row-inlined, .booking-form, .booking-col, .booking-weather{
+    .booking-row, .booking-row-inlined, .booking-form, .booking-col, .booking-weather{
         flex-direction: column;
         width: 100%;
     }

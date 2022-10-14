@@ -15,14 +15,14 @@
 <body>
 <!-- ----------------------------------- Booking Form Section ----------------------------------- -->
 <section class="booking">
-    <div class="row">
+    <div class="booking-row">
         <div class="booking-col">
             <form class="booking-form">
-                <div class="container">
+                <div class="booking-container">
                     <h2>Book a trip now!</h2>
                     <hr>
                     <p>Please fill out this form with required information.</p>
-                    <div class="row">
+                    <div class="booking-row">
                         <div class="col-30">
                             <label for="name">Complete Name</label>
                         </div>
@@ -30,7 +30,7 @@
                             <input type="text" id="name" name="visitor_name" placeholder="Enter your name" required>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="booking-row">
                         <div class="col-30">
                             <label for="email">Your E-mail</label>
                         </div>
@@ -38,7 +38,7 @@
                             <input type="email" id="email" name="visitor_email" placeholder="Enter your email" required> 
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="booking-row">
                         <div class="col-30">
                             <label for="phone">Your Phone</label>
                         </div>
@@ -48,9 +48,9 @@
                     </div>
                 </div>
                 <hr>
-                <div class="container">
+                <div class="booking-container">
                     <p>Select Date:</p>
-                    <div class="row-inlined">
+                    <div class="booking-row-inlined">
                         <div class="col-40">
                             <label for="checkin-date">Check-in</label>
                         </div>
@@ -58,7 +58,7 @@
                             <input type="date" id="checkin-date" name="checkin" required>
                         </div>
                     </div>
-                    <div class="row-inlined">
+                    <div class="booking-row-inlined">
                         <div class="col-40">
                             <label for="checkout-date">Check-out</label>
                         </div>
@@ -66,7 +66,7 @@
                             <input type="date" id="checkout-date" name="checkout" required>
                         </div>
                     </div>
-                    <div class="row-inlined">
+                    <div class="booking-row-inlined">
                         <div class="col-40">
                             <label for="adult">Adults</label>
                         </div>
@@ -74,7 +74,7 @@
                             <input type="number" id="adult" name="total_adults" placeholder="1" min="1" required>
                         </div>
                     </div>
-                    <div class="row-inlined">
+                    <div class="booking-row-inlined">
                         <div class="col-40">
                             <label for="child">Children</label>
                         </div>
@@ -83,34 +83,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <label for="place-selection">Select Place Preference</label>
-                        <select class="place"  id="place-selection" name="place-preference" required>
-                            <option value="">Choose a place from the list</option>
-                            <option value="NCR">Manila</option>
-                            <option value="CAR">Baguio</option>
-                            <option value="Region-1">La Union</option>
-                            <option value="Region-2">Tuguegarao</option>
-                            <option value="Region-30">Pampanga</option>
-                            <option value="Region-4">Calamba</option>
-                            <option value="Mimaropa">Calapan</option>
-                            <option value="Region-5">Legaspi</option>
-                            <option value="Region-6">Iloilo City</option>
-                            <option value="Region-7">Cebu City</option>
-                            <option value="Region-8">Tacloban City</option>
-                            <option value="Region-70">Pagadian City</option>
-                            <option value="Region-10">Cagayan de Oro City</option>
-                            <option value="Region-11">Davao City</option>
-                            <option value="Region-12">Koronadal City</option>
-                            <option value="Region-130">Butuan City</option>
-                            <option value="BARMM">Cotabato City</option>
-                        </select>
+                <div class="booking-container">
+                    <div class="booking-row">
+                        <div class="col-30">
+                            <label for="place-selection">Select Place:</label>
+                        </div>
+                        <div class="col-70">
+                            <select class="place"  id="place-selection" name="place-preference" required>
+                                <option value="">Choose a place from the list</option>
+                                <option value="NCR">Manila</option>
+                                <option value="CAR">Baguio</option>
+                                <option value="Region-1">La Union</option>
+                                <option value="Region-2">Tuguegarao</option>
+                                <option value="Region-30">Pampanga</option>
+                                <option value="Region-4">Calamba</option>
+                                <option value="Mimaropa">Calapan</option>
+                                <option value="Region-5">Legaspi</option>
+                                <option value="Region-6">Iloilo City</option>
+                                <option value="Region-7">Cebu City</option>
+                                <option value="Region-8">Tacloban City</option>
+                                <option value="Region-70">Pagadian City</option>
+                                <option value="Region-10">Cagayan de Oro City</option>
+                                <option value="Region-11">Davao City</option>
+                                <option value="Region-12">Koronadal City</option>
+                                <option value="Region-130">Butuan City</option>
+                                <option value="BARMM">Cotabato City</option>
+                            </select>
+                        </div>  
                     </div>
-                </div>
-                <hr>
-                <div class="container">
-                    <div class="row">
+                    <div class="booking-row">
                         <div class="col-30">
                             <label for="message">Anything Else?</label>
                         </div>
@@ -132,6 +133,6 @@
         </div>
     </div>
 </section>
-    
+<!-- ----------------------------------- End of Booking Form Section ----------------------------------- -->    
 </body>
 </html>
