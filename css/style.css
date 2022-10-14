@@ -11,7 +11,7 @@ FFF7E9
 }
 body {
     margin: 0 auto;
-    padding: 50px;
+    padding: 30px;
     
 }
 /* ----------------------------------- Booking Form Section -----------------------------------  */
@@ -23,10 +23,10 @@ body {
     padding-top: 20px;
 }
 .booking{
-    width: 90%;
+    width: 95%;
     margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     overflow: hidden;
 }
 .booking-col{
@@ -37,7 +37,7 @@ body {
 }
 .booking-form{
     width: 600px;
-    padding: 20px;
+    padding: 15px;
     background-color: #FFF7E9;
 }
 .booking-weather img{
@@ -46,10 +46,10 @@ body {
 }
 .container{
     border-radius: 5px;
-    padding: 20px;
+    padding: 15px;
 }
 .row{
-    margin: 20px 0;
+    margin: 15px 0;
 }
 .row-inlined{
     width: 49%;
@@ -107,14 +107,12 @@ label {
     padding-bottom: 50px;
 }  
 .booking-btn{
-    /* display: inline-block; */
     text-decoration: none;
     background-color: #0096FF;
     color: #fff;
     font-weight: 500;
     padding: 18px 30px;
     margin-top: 20px;
-    /* margin: 5px 0px; */
     border-radius: 30px;
     transition: transform 0.5s;
     text-align: center;
@@ -122,27 +120,26 @@ label {
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    
 }
 .booking-btn:hover{
-    /* border: 2px solid #f44336; */
     background: #FF731D;
     transition: 1s;
 }
-@media only screen and (max-width: 500px){
-    .col-30, .col-70, .col-10, .col-60, input[type=submit]{
-        width: 100%;
+@media only screen and (max-width: 600px){
+    .col-30, .col-70, .col-10, .col-60, input, .place{
+        width: 90%;
         margin-top: 0;
     } 
-    .row, .row-inlined, .booking-col, .booking-weather{
+    .row, .row-inlined, .booking-form, .booking-col, .booking-weather{
         flex-direction: column;
+        width: 100%;
+    }
+    .booking-weather img{
+        width: 250px;
+        padding-top: 30px;
+    }
+    .booking-btn{
+        width: 150px;
     }
 }
   
- /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-/* @media screen and (max-width: 600px) {
-    .col-30, .col-70, .col-10, .col-60, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  } */
